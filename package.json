@@ -1,0 +1,25 @@
+{
+  "name": "firstexpress",
+  "version": "1.0.0",
+  "description": "first express app",
+  "main": "index.js",
+  "scripts": {
+    "build:ui" : "rd /s /q dist || cd ../../part2/notes && npm run build && copy -r dist ../../part3/firstexpress",
+    "start": "node index.js",
+    "dev": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "express",
+    "nodejs"
+  ],
+  "author": "anantakrroy",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.2"
+  }
+}
